@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 text-white font-semibold py-3 px-6 rounded-button hover:bg-primary-700 transition-all duration-200 transform hover:scale-105 shadow-sm;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-neutral-900 font-medium py-3 px-6 rounded-button border border-neutral-300 hover:bg-neutral-50 hover:border-neutral-600 transition-all duration-200;
+  }
+  
+  .btn-danger {
+    @apply bg-error text-white font-semibold py-3 px-6 rounded-button hover:bg-red-700 transition-all duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-neutral-300 rounded-card focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-card shadow-md p-lg;
+  }
+  
+  .table-header {
+    @apply bg-neutral-50 px-4 py-3 text-left text-sm font-semibold text-neutral-900;
+  }
+  
+  .table-row {
+    @apply bg-white hover:bg-primary-100 transition-colors duration-150;
+  }
+  
+  .table-cell {
+    @apply px-4 py-3 text-sm text-neutral-900;
+  }
+}
